@@ -1,0 +1,262 @@
+.main{
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+  margin-top: 80px;
+  .container{
+    flex-direction: column;
+  }
+  .two-chapters{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    &__info{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      &__form{
+        margin-top: 30px;
+        width: 100%;
+        background-color: #F5F5F4;
+        border-radius: 8px;
+        padding: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        .form-search{
+          border: none;
+          outline: none;
+          background-color: transparent;
+          width: 100%;
+          font-size: 16px;
+          font-family: Open Sans, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+        }
+        .form-search::placeholder{
+          font-family: Open Sans, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          color: #262626;
+          opacity: 0.5;
+        }
+        .search_button{
+          background: #FFB254;
+          border-radius: 8px;
+          padding: 14px 40px;
+          border: none;
+          display: flex;
+          column-gap: 10px;
+          align-items: center;
+          font-family: Open Sans, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          color: #F5F5F4;
+        }
+      }
+      &__title{
+        font-family: Archivo, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 67px;
+        line-height: 67px;
+        color: #262626;
+      }
+      &__subtitle{
+        margin-top: 25px;
+        font-family: Open Sans, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 40px;
+        color: #262626;
+
+      }
+    }
+
+
+    &__rectangle{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      .Video_courses:hover{
+        padding: 13px;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      .Video_courses{
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: #F5F5F4;
+        position: absolute;
+        column-gap: 10px;
+        box-shadow: 0 24px 50px rgba(0, 0, 0, 0.15);
+        border-radius: 24px;
+        svg{
+          padding: 5px;
+        }
+
+        bottom: 0;
+        right: 0;
+        .video_row_text{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          h1{
+            font-family: Archivo, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 30px;
+            color: #1C2936;
+          }
+          span{
+            font-family: Poppins, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+            color: #1C2936;
+            opacity: 0.5;
+          }
+        }
+      }
+      .group:hover{
+        padding: 13px;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      .group{
+        transition: 0.5s;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: #F5F5F4;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        span{
+          font-family: Archivo, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 30px;
+          text-align: center;
+          color: #1C2936;
+        }
+        h1{
+          font-family: Poppins, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 27px;
+          text-align: center;
+          color: #262626;
+          opacity: 0.5;
+        }
+        box-shadow: 0 24px 50px rgba(0, 0, 0, 0.15);
+        border-radius: 24px;
+        svg{
+          padding: 15px;
+        }
+
+        top: 0;
+        right: 0;
+      }
+      .mentors:hover{
+        padding: 23px;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      .mentors{
+        transition: 0.5s;
+        background: #F5F5F4;
+        box-shadow: 0 24px 50px rgba(0, 0, 0, 0.15);
+        border-radius: 24px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 15px;
+        row-gap: 15px;
+        padding: 20px;
+        left: -10%;
+        top: 20%;
+        svg{
+          background-color: #FFB254;
+          border-radius: 15px;
+          padding: 5px;
+        }
+        .text{
+          display: flex;
+          flex-direction: column;
+          h1{
+            font-family: Archivo, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #1C2936;
+          }
+          span{
+            font-family: Poppins, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            color: #262626;
+            opacity: 0.5;
+          }
+        }
+      }
+      .rectangle_circle:hover{
+        transition: 0.5s;
+        transform: rotate(5deg);
+        .group{
+          transform: rotate(-5deg);
+        }
+        .mentors{
+          transform: rotate(-5deg);
+        }
+        .Video_courses{
+          transform: rotate(-5deg);
+        }
+      }
+      .rectangle_circle{
+        width: 448px;
+        height: 448px;
+        border-radius: 50%;
+        background-color: #FFB254;
+        position: relative;
+
+        transition: 0.5s;
+        box-shadow: 0 24px 50px rgba(0, 0, 0, 0.15);
+      }
+      .rectangle_circle:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: #FFB254 1px solid;
+        border-radius: 50%;
+        position: absolute;
+        top: -28px;
+        left: -29px;
+      }
+    }
+  }
+}
+
